@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+     margin: 0; 
+    font-family: 'poppins', sans-serif;
+     background-color: aliceblue; 
+    color: #333; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 12px 40px;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* pour center et rendre propre*/
+    object-fit: cover;   
+}
+header nav a {
+    color: #333;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.hero{
+    /* background-image: none; */
+    padding: 0px 50px;
+    color: #333;
+    display: flex;
+    justify-content:space-between;
+    height: 60vh; 
+}
+
+.hero-image{
+    width: 70%;
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.hero-image img{
+    width: 500px;
+    height: 450px;
+    padding-bottom: 130px;
+
+
+}
+ 
+.hero-content h1{
+    font-size: 36px;
+    color: #000;
+    /* aligner les elements vers le debut de la ligne */
+    justify-content: start;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center; 
+   padding-top: 90px;
+   
+}
+
+.btn{
+    display: inline-block;
+    background-color: #4c2da3;
+    color: antiquewhite;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    color: #333;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+}
+
+.product-grid{
+    /* disposer les elements en ligne et colones */
+    display: grid;
+    gap: 20px;
+    /* permet de definir la largeur d columns dans une grille */
+    grid-template-columns: repeat(4,  1fr);
+}
+
+.product-card{
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    /* rendre fluide les changements de style */
+    transition: all 0.3s ease;
+      
+}
+
+
+.product-card img{
+    width: 100px;
+    height: 100px;
+    /* definir la facon dont le contenu remplit un element sans couper l'image */
+    object-fit: contain;
+}
+
+.product-card p{
+    margin: 10px 0 5px;
+    font-weight: 400;
+}
+
+.product-card span{
+    color: black;
+    font-size: bold;
+}
+
+/* ajout d'un style temporaire a un element lorsque la souris passe sur lui */
+.product-card:hover{
+    /* modifier un element */
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0,2);
+}
+
+.product-card button{
+    background-color: #4c2da3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover, .product-card button{
+    /* rend tout les changements progressifs sur 0.3s */
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .product-card
+button:hover{
+    background-color: palevioletred;
+    /* zomm leger */
+    transform: scale(1.05);
+}
+
+.col-1{
+    flex: 1;
+    margin: 0 0 10px;
+    min-width: 250Px;
+    color: black;
+}
+footer{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 100px;
+  margin-top: 40px;
+  background-color:aqua ; 
+  color: #333;
+  flex-wrap: wrap;  
+}
